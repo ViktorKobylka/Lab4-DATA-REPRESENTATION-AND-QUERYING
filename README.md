@@ -204,3 +204,4 @@ In traditional websites, the browser requests a document from a web server, down
 Client side routing allows your app to update the URL from a link click without making another request for another document from the server. Instead, your app can immediately render some new UI and make data requests with fetch to update the page with new information.
 
 Update the App so that it display the Footer component when the URL changes to localhost:3000/read and Header component when the URL of the App changes to localhost:3000/create under the Navigation bar.
+"# Lab-3-DATA-REPRESENTATION-AND-QUERYING" 
