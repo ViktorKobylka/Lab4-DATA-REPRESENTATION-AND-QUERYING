@@ -1,10 +1,10 @@
+import MovieItem from "./movieitem";
 const Movies = (props)=>{
-    return(
-        <div>
-            hello from movies component
-            {console.log(props.myMovies)}
-        </div>
-    );
+   return props.myMovies.map(
+    (movie)=>{
+        return <MovieItem mymovie={movie} key={movie.imdbID}/>
+    }
+   );
 
 }
 
