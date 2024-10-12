@@ -1,11 +1,14 @@
 import Card from "react-bootstrap/Card";
 import { useEffect } from "react";
 
+//define functional component
 const MovieItem = (props)=>{
+    //show mymovie details
     useEffect(()=>{
         console.log("Movie Item: ", props.mymovie);
     }, [props.mymovie]);
 
+    //display mymovie data using Card
     return(
         <div>
             <Card>

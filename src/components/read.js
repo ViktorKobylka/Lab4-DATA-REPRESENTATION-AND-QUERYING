@@ -1,4 +1,7 @@
+//import Movies component
 import Movies from "./movies";
+
+//define Read component
 const Read = () => {
 
     const data = [
@@ -26,7 +29,9 @@ const Read = () => {
     ];
 
     return(<div>
+          {/*show heading*/}
          <h3>Hello from the Read component</h3>
+          {/*pass movie data*/}
          <Movies myMovies={data}/>
     </div>);
   };

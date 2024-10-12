@@ -7,12 +7,14 @@ import Content from './components/content';
 import Read from './components/read';
 import Create from './components/create';
 
+
 function App() {
   return (
     <Router>
+      {/*render navigation bar*/}
       <NavigationBar />
       <Routes>
-        
+        {/*get routes page and render component*/}
         <Route path="/" element={<Content />} />
         <Route path="/read" element={<Read></Read>} />
         <Route path="/create" element={<Create></Create>} />
