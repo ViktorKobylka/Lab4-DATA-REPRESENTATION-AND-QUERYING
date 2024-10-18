@@ -7,7 +7,7 @@ function Read() {
   const data = [];
   //give comment
   useEffect(() => {
-    //give comment
+    //give comment and explain everything below
     axios.get('https://jsonblob.com/api/jsonblob/1287718524221775872')
       .then((response) => {
         console.log(response.data);
