@@ -5,15 +5,19 @@ import axios from "axios";
 function Read() {
   const [movies, setMovies] = useState([]);
   const data = [];
-  //give comment
+  //run enclosed code 
   useEffect(() => {
-    //give comment and explain everything below
+    //make a get request to fetch data from API
     axios.get('https://jsonblob.com/api/jsonblob/1287718524221775872')
       .then((response) => {
+        //show response data in console
         console.log(response.data);
+        //update movie data received from API
         setMovies(response.data.movies);
+
       })
       .catch((error) => {
+        //show error if request fails
         console.log(error);
       });
   });
@@ -21,6 +25,7 @@ function Read() {
   return (
     <div>
       <h2>This is my Read Component.</h2>
+      {/*send movies state as a prop to the Movies component*/}
       <Movies myMovies={movies} />
     </div>
   );
